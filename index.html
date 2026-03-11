@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +8,7 @@
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            background: #1a1a1a;
+            background: #0A0A0A;
             color: #e8e0d4;
             line-height: 1.7;
             padding: 20px;
@@ -50,7 +50,7 @@
         }
         .lang-btn.active {
             background: #c4b69c;
-            color: #1a1a1a;
+            color: #0A0A0A;
         }
         h2 {
             font-family: 'Georgia', serif;
@@ -96,303 +96,618 @@
             <button class="lang-btn" onclick="showLang('ko', this)">한국어</button>
         </div>
 
-        <!-- ═══ TÜRKÇE ═══ -->
-        <div id="tr" class="section">
-            <p><strong>Son güncelleme:</strong> 24 Şubat 2026</p>
-
-            <h2>1. Genel Bakış</h2>
-            <p>OPUS, biyolojik sinyallerinizi takip eden ve kişiselleştirilmiş sağlık içgörüleri sunan bir iOS uygulamasıdır. Gizliliğiniz bizim için en önemli önceliktir.</p>
-            <div class="highlight"><strong>Temel ilkemiz:</strong> Tüm verileriniz cihazınızda kalır. Hiçbir kişisel sağlık verisi harici sunuculara gönderilmez.</div>
-
-            <h2>2. Toplanan Veriler</h2>
-            <p><strong>a) Apple Sağlık (HealthKit) Verileri</strong></p>
-            <ul><li>Uyku süresi ve uyku evreleri</li><li>Kalp atış hızı değişkenliği (HRV)</li><li>Dinlenme kalp atış hızı</li><li>Kan oksijen doygunluğu (SpO2)</li><li>Günlük adım sayısı ve aktivite verileri</li></ul>
-            <p><strong>b) Kamera Verileri</strong></p>
-            <ul><li>Cilt taraması fotoğrafları (ön kamera ile)</li><li>Fotoğraflar şifreli olarak yalnızca cihazınızda saklanır</li></ul>
-            <p><strong>c) Manuel Giriş Verileri</strong></p>
-            <ul><li>Kafein tüketimi</li><li>Alkol tüketimi</li><li>Su tüketimi (hidrasyon)</li><li>Profil bilgileri (isim, yaş, cinsiyet — isteğe bağlı)</li><li>Regl döngüsü takibi (isteğe bağlı)</li></ul>
-
-            <h2>3. Verilerin Kullanım Amacı</h2>
-            <ul><li>Kişisel biyolojik baseline hesaplama</li><li>Günlük mod belirleme (Dinlen / Devam / Zorla)</li><li>Korelasyon ve pattern analizi</li><li>Kişiselleştirilmiş içgörü ve öneriler</li></ul>
-            <div class="highlight">OPUS bir sağlık takip uygulamasıdır, tıbbi cihaz değildir. Sağlanan bilgiler tıbbi teşhis, tanı veya tedavi yerine geçmez.</div>
-
-            <h2>4. Veri Depolama ve Güvenlik</h2>
-            <ul><li>Tüm veriler yalnızca cihazınızda işlenir ve saklanır</li><li>iCloud senkronizasyonu isteğe bağlıdır ve tamamen kullanıcı kontrolündedir</li><li>iCloud kullanılsa bile veriler Apple'ın şifreleme altyapısıyla korunur</li><li>Hiçbir veri üçüncü taraf sunuculara gönderilmez</li><li>Cilt tarama fotoğrafları cihaz üzerinde şifreli olarak saklanır</li></ul>
-
-            <h2>5. Üçüncü Taraf Paylaşımı</h2>
-            <ul><li>Reklam ağlarına veri aktarılmaz</li><li>Analitik servislerine kişisel sağlık verisi gönderilmez</li><li>Veri satışı veya ticareti yapılmaz</li><li>HealthKit verileri Apple kurallarına uygun olarak korunur</li></ul>
-
-            <h2>6. Reklam</h2>
-            <p>OPUS reklam içermez ve reklam amacıyla veri toplamaz.</p>
-
-            <h2>7. Kullanıcı Hakları</h2>
-            <ul><li><strong>Veri silme:</strong> Ayarlar &gt; Tüm Verileri Sil ile tüm verilerinizi kalıcı olarak silebilirsiniz</li><li><strong>İzin yönetimi:</strong> iOS Ayarlar üzerinden HealthKit ve kamera izinlerini istediğiniz zaman açıp kapatabilirsiniz</li><li><strong>Abonelik yönetimi:</strong> Apple Ayarlar &gt; Abonelikler üzerinden yönetilir</li></ul>
-
-            <h2>8. Çocukların Gizliliği</h2>
-            <p>OPUS 17 yaş altı kullanıcılara yönelik değildir. Bilerek 17 yaş altı kullanıcılardan veri toplamayız.</p>
-
-            <h2>9. Değişiklikler</h2>
-            <p>Bu gizlilik politikası güncellenebilir. Önemli değişiklikler uygulama içinden bildirilecektir.</p>
-
-            <h2>10. İletişim</h2>
-            <p><a href="mailto:YOUR_EMAIL@example.com">opusbio.hello@gmail.com</a></p>
-        </div>
-
         <!-- ═══ ENGLISH ═══ -->
         <div id="en" class="section active">
-            <p><strong>Last updated:</strong> February 24, 2026</p>
+            <p><strong>Last updated:</strong> March 9, 2026</p>
 
             <h2>1. Overview</h2>
             <p>OPUS is an iOS application that tracks your biological signals and provides personalized health insights. Your privacy is our highest priority.</p>
-            <div class="highlight"><strong>Our core principle:</strong> All your data stays on your device. No personal health data is ever sent to external servers.</div>
+            <div class="highlight"><strong>Our core principle:</strong> Most of your data stays on your device. When you use OPUS Pro features such as Cloud Skin Analysis, selected data is securely transmitted to our servers for processing, as described below.</div>
 
             <h2>2. Data We Collect</h2>
             <p><strong>a) Apple Health (HealthKit) Data</strong></p>
             <ul><li>Sleep duration and sleep stages</li><li>Heart rate variability (HRV)</li><li>Resting heart rate</li><li>Blood oxygen saturation (SpO2)</li><li>Daily step count and activity data</li></ul>
             <p><strong>b) Camera Data</strong></p>
-            <ul><li>Skin scan photos (via front camera)</li><li>Photos are encrypted and stored only on your device</li></ul>
+            <ul><li>Skin scan photos (via front camera)</li><li>Photos are encrypted and stored on your device</li><li>If you use OPUS Pro Cloud Analysis, photos are securely sent to our backend for AI-powered analysis (see Section 3)</li></ul>
             <p><strong>c) Manually Entered Data</strong></p>
             <ul><li>Caffeine intake</li><li>Alcohol intake</li><li>Water intake (hydration)</li><li>Profile information (name, age, gender — optional)</li><li>Menstrual cycle tracking (optional)</li></ul>
 
-            <h2>3. How We Use Your Data</h2>
+            <h2>3. Cloud Analysis (OPUS Pro)</h2>
+            <p>OPUS Pro subscribers may use the Cloud Skin Analysis feature. When you use this feature:</p>
+            <ul>
+                <li>Your skin scan photos are securely transmitted to our backend server hosted on <strong>Railway</strong> (railway.com)</li>
+                <li>Our server sends the images to the <strong>OpenAI API (GPT-4o)</strong> for AI-powered skin analysis</li>
+                <li>The analysis results are returned to your device</li>
+                <li>Photos sent for cloud analysis are processed in real time and are <strong>not permanently stored</strong> on our servers or OpenAI's servers</li>
+                <li>OpenAI processes the data in accordance with their <a href="https://openai.com/policies/api-data-usage-policies" target="_blank">API data usage policy</a> — API data is not used to train their models</li>
+            </ul>
+            <div class="highlight"><strong>You are always in control:</strong> Cloud Analysis is an opt-in feature. You can use OPUS without ever sending photos to the cloud. On-device analysis remains available for all users.</div>
+
+            <h2>4. Data Synchronization</h2>
+            <p>OPUS uses <strong>Supabase</strong> (supabase.com) for optional cloud synchronization:</p>
+            <ul>
+                <li>If you create an account or enable sync, your profile data and health summaries may be stored in Supabase's cloud infrastructure</li>
+                <li>Data is transmitted over encrypted connections (TLS) and stored securely</li>
+                <li>Supabase servers are hosted on AWS infrastructure</li>
+                <li>You can use OPUS without creating an account — sync is entirely optional</li>
+                <li>You may delete your synced data at any time (see Section 9)</li>
+            </ul>
+
+            <h2>5. How We Use Your Data</h2>
             <ul><li>Calculating your personal biological baseline</li><li>Determining daily mode (Rest / Steady / Thrive)</li><li>Correlation and pattern analysis</li><li>Personalized insights and recommendations</li></ul>
             <div class="highlight">OPUS is a health tracking application, not a medical device. Information provided does not replace medical diagnosis, evaluation, or treatment.</div>
 
-            <h2>4. Data Storage and Security</h2>
-            <ul><li>All data is processed and stored exclusively on your device</li><li>iCloud synchronization is optional and entirely under your control</li><li>When iCloud is used, data is protected by Apple's encryption infrastructure</li><li>No data is sent to third-party servers</li><li>Skin scan photos are stored encrypted on device</li></ul>
+            <h2>6. Data Storage and Security</h2>
+            <ul>
+                <li>Local data is processed and stored on your device</li>
+                <li>iCloud synchronization is optional and entirely under your control</li>
+                <li>When iCloud is used, data is protected by Apple's encryption infrastructure</li>
+                <li>Skin scan photos are stored encrypted on device</li>
+                <li>Cloud-synced data (via Supabase) is encrypted in transit and at rest</li>
+                <li>Cloud Analysis photos (via Railway/OpenAI) are processed in real time and not permanently stored</li>
+            </ul>
 
-            <h2>5. Third-Party Sharing</h2>
-            <ul><li>No data is transmitted to advertising networks</li><li>No personal health data is sent to analytics services</li><li>No data is sold or traded</li><li>HealthKit data is protected in compliance with Apple's guidelines</li></ul>
+            <h2>7. Third-Party Services</h2>
+            <p>OPUS integrates with the following third-party services:</p>
+            <ul>
+                <li><strong>OpenAI API (GPT-4o):</strong> Used for OPUS Pro Cloud Skin Analysis. Photos are sent via our backend for AI analysis. OpenAI does not use API data to train models</li>
+                <li><strong>Supabase:</strong> Used for optional account and data synchronization. Hosted on AWS infrastructure</li>
+                <li><strong>Railway:</strong> Hosts our backend server that processes Cloud Analysis requests</li>
+                <li><strong>Apple HealthKit:</strong> Data is protected in compliance with Apple's guidelines</li>
+            </ul>
+            <p>We do not:</p>
+            <ul>
+                <li>Transmit data to advertising networks</li>
+                <li>Sell or trade your data</li>
+                <li>Share personal health data with analytics services for marketing purposes</li>
+            </ul>
 
-            <h2>6. Advertising</h2>
+            <h2>8. Advertising</h2>
             <p>OPUS does not contain advertising and does not collect data for advertising purposes.</p>
 
-            <h2>7. Your Rights</h2>
-            <ul><li><strong>Data deletion:</strong> Permanently delete all your data via Settings &gt; Delete All Data</li><li><strong>Permission management:</strong> Enable or disable HealthKit and camera permissions at any time through iOS Settings</li><li><strong>Subscription management:</strong> Managed through Apple Settings &gt; Subscriptions</li></ul>
+            <h2>9. Your Rights</h2>
+            <ul>
+                <li><strong>Data deletion:</strong> Permanently delete all your local data via Settings &gt; Delete All Data</li>
+                <li><strong>Account deletion:</strong> If you created an account, you can request full deletion of your cloud data and account by contacting us at <a href="mailto:opusbio.hello@gmail.com">opusbio.hello@gmail.com</a></li>
+                <li><strong>Permission management:</strong> Enable or disable HealthKit and camera permissions at any time through iOS Settings</li>
+                <li><strong>Subscription management:</strong> Managed through Apple Settings &gt; Subscriptions</li>
+            </ul>
 
-            <h2>8. Children's Privacy</h2>
-            <p>OPUS is not intended for users under the age of 17. We do not knowingly collect data from users under 17.</p>
+            <h2>10. Children's Privacy</h2>
+            <p>OPUS is not intended for users under the age of 13. We do not knowingly collect data from users under 13.</p>
 
-            <h2>9. Changes</h2>
+            <h2>11. Changes</h2>
             <p>This privacy policy may be updated. Significant changes will be communicated through the application.</p>
 
-            <h2>10. Contact</h2>
-            <p><a href="mailto:YOUR_EMAIL@example.com">opusbio.hello@gmail.com</a></p>
+            <h2>12. Contact</h2>
+            <p><a href="mailto:opusbio.hello@gmail.com">opusbio.hello@gmail.com</a></p>
         </div>
 
         <!-- ═══ DEUTSCH ═══ -->
         <div id="de" class="section">
-            <p><strong>Letzte Aktualisierung:</strong> 24. Februar 2026</p>
+            <p><strong>Letzte Aktualisierung:</strong> 9. März 2026</p>
 
             <h2>1. Überblick</h2>
             <p>OPUS ist eine iOS-Anwendung, die Ihre biologischen Signale verfolgt und personalisierte Gesundheitseinblicke bietet. Ihre Privatsphäre hat für uns höchste Priorität.</p>
-            <div class="highlight"><strong>Unser Grundprinzip:</strong> Alle Ihre Daten bleiben auf Ihrem Gerät. Keine persönlichen Gesundheitsdaten werden jemals an externe Server gesendet.</div>
+            <div class="highlight"><strong>Unser Grundprinzip:</strong> Die meisten Ihrer Daten bleiben auf Ihrem Gerät. Wenn Sie OPUS Pro-Funktionen wie die Cloud-Hautanalyse nutzen, werden ausgewählte Daten sicher an unsere Server zur Verarbeitung übermittelt, wie unten beschrieben.</div>
 
             <h2>2. Erhobene Daten</h2>
             <p><strong>a) Apple Health (HealthKit) Daten</strong></p>
             <ul><li>Schlafdauer und Schlafphasen</li><li>Herzfrequenzvariabilität (HRV)</li><li>Ruheherzfrequenz</li><li>Blutsauerstoffsättigung (SpO2)</li><li>Tägliche Schrittzahl und Aktivitätsdaten</li></ul>
             <p><strong>b) Kameradaten</strong></p>
-            <ul><li>Hautanalyse-Fotos (über die Frontkamera)</li><li>Fotos werden verschlüsselt und ausschließlich auf Ihrem Gerät gespeichert</li></ul>
+            <ul><li>Hautanalyse-Fotos (über die Frontkamera)</li><li>Fotos werden verschlüsselt auf Ihrem Gerät gespeichert</li><li>Bei Nutzung der OPUS Pro Cloud-Analyse werden Fotos sicher an unser Backend für KI-Analyse gesendet (siehe Abschnitt 3)</li></ul>
             <p><strong>c) Manuell eingegebene Daten</strong></p>
             <ul><li>Koffeinkonsum</li><li>Alkoholkonsum</li><li>Wasseraufnahme (Hydration)</li><li>Profilinformationen (Name, Alter, Geschlecht — optional)</li><li>Menstruationszyklus-Tracking (optional)</li></ul>
 
-            <h2>3. Verwendungszweck der Daten</h2>
+            <h2>3. Cloud-Analyse (OPUS Pro)</h2>
+            <p>OPUS Pro-Abonnenten können die Cloud-Hautanalyse-Funktion nutzen. Bei Nutzung dieser Funktion:</p>
+            <ul>
+                <li>Ihre Hautanalyse-Fotos werden sicher an unseren Backend-Server auf <strong>Railway</strong> (railway.com) übermittelt</li>
+                <li>Unser Server sendet die Bilder an die <strong>OpenAI API (GPT-4o)</strong> für KI-gestützte Hautanalyse</li>
+                <li>Die Analyseergebnisse werden an Ihr Gerät zurückgesendet</li>
+                <li>Fotos werden in Echtzeit verarbeitet und <strong>nicht dauerhaft</strong> auf unseren Servern oder OpenAI-Servern gespeichert</li>
+                <li>OpenAI verarbeitet die Daten gemäß ihrer API-Datennutzungsrichtlinie — API-Daten werden nicht zum Training ihrer Modelle verwendet</li>
+            </ul>
+            <div class="highlight"><strong>Sie haben die Kontrolle:</strong> Die Cloud-Analyse ist eine optionale Funktion. Sie können OPUS nutzen, ohne jemals Fotos in die Cloud zu senden.</div>
+
+            <h2>4. Datensynchronisierung</h2>
+            <p>OPUS verwendet <strong>Supabase</strong> (supabase.com) für optionale Cloud-Synchronisierung:</p>
+            <ul>
+                <li>Wenn Sie ein Konto erstellen oder die Synchronisierung aktivieren, können Ihre Profildaten und Gesundheitszusammenfassungen in der Cloud-Infrastruktur von Supabase gespeichert werden</li>
+                <li>Daten werden über verschlüsselte Verbindungen (TLS) übertragen und sicher gespeichert</li>
+                <li>Supabase-Server werden auf AWS-Infrastruktur gehostet</li>
+                <li>Sie können OPUS ohne Kontoerstellung nutzen — die Synchronisierung ist vollständig optional</li>
+                <li>Sie können Ihre synchronisierten Daten jederzeit löschen (siehe Abschnitt 9)</li>
+            </ul>
+
+            <h2>5. Verwendungszweck der Daten</h2>
             <ul><li>Berechnung Ihrer persönlichen biologischen Baseline</li><li>Bestimmung des täglichen Modus (Ruhe / Stabil / Antrieb)</li><li>Korrelations- und Musteranalyse</li><li>Personalisierte Einblicke und Empfehlungen</li></ul>
             <div class="highlight">OPUS ist eine Gesundheits-Tracking-Anwendung und kein Medizinprodukt. Die bereitgestellten Informationen ersetzen keine medizinische Diagnose, Bewertung oder Behandlung.</div>
 
-            <h2>4. Datenspeicherung und Sicherheit</h2>
-            <ul><li>Alle Daten werden ausschließlich auf Ihrem Gerät verarbeitet und gespeichert</li><li>Die iCloud-Synchronisierung ist optional und liegt vollständig unter Ihrer Kontrolle</li><li>Bei Nutzung von iCloud werden die Daten durch Apples Verschlüsselungsinfrastruktur geschützt</li><li>Keine Daten werden an Drittanbieter-Server gesendet</li><li>Hautanalyse-Fotos werden verschlüsselt auf dem Gerät gespeichert</li></ul>
+            <h2>6. Datenspeicherung und Sicherheit</h2>
+            <ul>
+                <li>Lokale Daten werden auf Ihrem Gerät verarbeitet und gespeichert</li>
+                <li>Die iCloud-Synchronisierung ist optional und liegt vollständig unter Ihrer Kontrolle</li>
+                <li>Bei Nutzung von iCloud werden die Daten durch Apples Verschlüsselungsinfrastruktur geschützt</li>
+                <li>Hautanalyse-Fotos werden verschlüsselt auf dem Gerät gespeichert</li>
+                <li>Cloud-synchronisierte Daten (über Supabase) werden bei der Übertragung und im Ruhezustand verschlüsselt</li>
+                <li>Cloud-Analyse-Fotos (über Railway/OpenAI) werden in Echtzeit verarbeitet und nicht dauerhaft gespeichert</li>
+            </ul>
 
-            <h2>5. Weitergabe an Dritte</h2>
-            <ul><li>Keine Datenübertragung an Werbenetzwerke</li><li>Keine persönlichen Gesundheitsdaten an Analysedienste</li><li>Kein Verkauf oder Handel mit Daten</li><li>HealthKit-Daten werden gemäß den Apple-Richtlinien geschützt</li></ul>
+            <h2>7. Drittanbieter-Dienste</h2>
+            <p>OPUS integriert die folgenden Drittanbieter-Dienste:</p>
+            <ul>
+                <li><strong>OpenAI API (GPT-4o):</strong> Für OPUS Pro Cloud-Hautanalyse. Fotos werden über unser Backend für KI-Analyse gesendet. OpenAI verwendet API-Daten nicht zum Training von Modellen</li>
+                <li><strong>Supabase:</strong> Für optionale Konto- und Datensynchronisierung. Gehostet auf AWS-Infrastruktur</li>
+                <li><strong>Railway:</strong> Hostet unseren Backend-Server für Cloud-Analyse-Anfragen</li>
+                <li><strong>Apple HealthKit:</strong> Daten werden gemäß den Apple-Richtlinien geschützt</li>
+            </ul>
+            <p>Wir:</p>
+            <ul>
+                <li>Übertragen keine Daten an Werbenetzwerke</li>
+                <li>Verkaufen oder handeln nicht mit Ihren Daten</li>
+                <li>Teilen keine persönlichen Gesundheitsdaten mit Analysediensten zu Marketingzwecken</li>
+            </ul>
 
-            <h2>6. Werbung</h2>
+            <h2>8. Werbung</h2>
             <p>OPUS enthält keine Werbung und erhebt keine Daten zu Werbezwecken.</p>
 
-            <h2>7. Ihre Rechte</h2>
-            <ul><li><strong>Datenlöschung:</strong> Löschen Sie alle Daten dauerhaft über Einstellungen &gt; Alle Daten löschen</li><li><strong>Berechtigungsverwaltung:</strong> Aktivieren oder deaktivieren Sie HealthKit- und Kameraberechtigungen jederzeit über die iOS-Einstellungen</li><li><strong>Abonnementverwaltung:</strong> Über Apple Einstellungen &gt; Abonnements verwaltet</li></ul>
+            <h2>9. Ihre Rechte</h2>
+            <ul>
+                <li><strong>Datenlöschung:</strong> Löschen Sie alle lokalen Daten dauerhaft über Einstellungen &gt; Alle Daten löschen</li>
+                <li><strong>Kontolöschung:</strong> Wenn Sie ein Konto erstellt haben, können Sie die vollständige Löschung Ihrer Cloud-Daten und Ihres Kontos anfordern unter <a href="mailto:opusbio.hello@gmail.com">opusbio.hello@gmail.com</a></li>
+                <li><strong>Berechtigungsverwaltung:</strong> Aktivieren oder deaktivieren Sie HealthKit- und Kameraberechtigungen jederzeit über die iOS-Einstellungen</li>
+                <li><strong>Abonnementverwaltung:</strong> Über Apple Einstellungen &gt; Abonnements verwaltet</li>
+            </ul>
 
-            <h2>8. Datenschutz für Kinder</h2>
-            <p>OPUS richtet sich nicht an Nutzer unter 17 Jahren. Wir erheben wissentlich keine Daten von Nutzern unter 17 Jahren.</p>
+            <h2>10. Datenschutz für Kinder</h2>
+            <p>OPUS richtet sich nicht an Nutzer unter 13 Jahren. Wir erheben wissentlich keine Daten von Nutzern unter 13 Jahren.</p>
 
-            <h2>9. Änderungen</h2>
+            <h2>11. Änderungen</h2>
             <p>Diese Datenschutzrichtlinie kann aktualisiert werden. Wesentliche Änderungen werden über die Anwendung mitgeteilt.</p>
 
-            <h2>10. Kontakt</h2>
-            <p><a href="mailto:YOUR_EMAIL@example.com">opusbio.hello@gmail.com</a></p>
-        </div>
-
-        <!-- ═══ FRANÇAIS ═══ -->
-        <div id="fr" class="section">
-            <p><strong>Dernière mise à jour :</strong> 24 février 2026</p>
-
-            <h2>1. Aperçu</h2>
-            <p>OPUS est une application iOS qui suit vos signaux biologiques et fournit des informations de santé personnalisées. Votre vie privée est notre priorité absolue.</p>
-            <div class="highlight"><strong>Notre principe fondamental :</strong> Toutes vos données restent sur votre appareil. Aucune donnée de santé personnelle n'est jamais envoyée vers des serveurs externes.</div>
-
-            <h2>2. Données collectées</h2>
-            <p><strong>a) Données Apple Santé (HealthKit)</strong></p>
-            <ul><li>Durée et phases du sommeil</li><li>Variabilité de la fréquence cardiaque (VFC)</li><li>Fréquence cardiaque au repos</li><li>Saturation en oxygène du sang (SpO2)</li><li>Nombre de pas quotidien et données d'activité</li></ul>
-            <p><strong>b) Données de la caméra</strong></p>
-            <ul><li>Photos d'analyse cutanée (via la caméra frontale)</li><li>Les photos sont cryptées et stockées uniquement sur votre appareil</li></ul>
-            <p><strong>c) Données saisies manuellement</strong></p>
-            <ul><li>Consommation de caféine</li><li>Consommation d'alcool</li><li>Consommation d'eau (hydratation)</li><li>Informations de profil (nom, âge, sexe — facultatif)</li><li>Suivi du cycle menstruel (facultatif)</li></ul>
-
-            <h2>3. Utilisation des données</h2>
-            <ul><li>Calcul de votre référence biologique personnelle</li><li>Détermination du mode quotidien (Repos / Stable / Élan)</li><li>Analyse de corrélations et de tendances</li><li>Informations et recommandations personnalisées</li></ul>
-            <div class="highlight">OPUS est une application de suivi de santé, pas un dispositif médical. Les informations fournies ne remplacent pas un diagnostic, une évaluation ou un traitement médical.</div>
-
-            <h2>4. Stockage et sécurité des données</h2>
-            <ul><li>Toutes les données sont traitées et stockées exclusivement sur votre appareil</li><li>La synchronisation iCloud est facultative et entièrement sous votre contrôle</li><li>En cas d'utilisation d'iCloud, les données sont protégées par l'infrastructure de chiffrement d'Apple</li><li>Aucune donnée n'est envoyée à des serveurs tiers</li><li>Les photos d'analyse cutanée sont stockées de manière cryptée sur l'appareil</li></ul>
-
-            <h2>5. Partage avec des tiers</h2>
-            <ul><li>Aucune donnée transmise aux réseaux publicitaires</li><li>Aucune donnée de santé personnelle envoyée aux services d'analyse</li><li>Aucune vente ou échange de données</li><li>Les données HealthKit sont protégées conformément aux directives d'Apple</li></ul>
-
-            <h2>6. Publicité</h2>
-            <p>OPUS ne contient pas de publicité et ne collecte pas de données à des fins publicitaires.</p>
-
-            <h2>7. Vos droits</h2>
-            <ul><li><strong>Suppression des données :</strong> Supprimez définitivement toutes vos données via Réglages &gt; Supprimer toutes les données</li><li><strong>Gestion des autorisations :</strong> Activez ou désactivez les autorisations HealthKit et caméra à tout moment via les Réglages iOS</li><li><strong>Gestion de l'abonnement :</strong> Gérée via Réglages Apple &gt; Abonnements</li></ul>
-
-            <h2>8. Confidentialité des enfants</h2>
-            <p>OPUS ne s'adresse pas aux utilisateurs de moins de 17 ans. Nous ne collectons pas sciemment les données d'utilisateurs de moins de 17 ans.</p>
-
-            <h2>9. Modifications</h2>
-            <p>Cette politique de confidentialité peut être mise à jour. Les modifications importantes seront communiquées via l'application.</p>
-
-            <h2>10. Contact</h2>
-            <p><a href="mailto:YOUR_EMAIL@example.com">opusbio.hello@gmail.com</a></p>
+            <h2>12. Kontakt</h2>
+            <p><a href="mailto:opusbio.hello@gmail.com">opusbio.hello@gmail.com</a></p>
         </div>
 
         <!-- ═══ ESPAÑOL ═══ -->
         <div id="es" class="section">
-            <p><strong>Última actualización:</strong> 24 de febrero de 2026</p>
+            <p><strong>Última actualización:</strong> 9 de marzo de 2026</p>
 
             <h2>1. Descripción general</h2>
             <p>OPUS es una aplicación iOS que rastrea tus señales biológicas y proporciona información de salud personalizada. Tu privacidad es nuestra máxima prioridad.</p>
-            <div class="highlight"><strong>Nuestro principio fundamental:</strong> Todos tus datos permanecen en tu dispositivo. Ningún dato de salud personal se envía jamás a servidores externos.</div>
+            <div class="highlight"><strong>Nuestro principio fundamental:</strong> La mayoría de tus datos permanecen en tu dispositivo. Cuando utilizas funciones de OPUS Pro como el Análisis de Piel en la Nube, los datos seleccionados se transmiten de forma segura a nuestros servidores para su procesamiento, como se describe a continuación.</div>
 
             <h2>2. Datos que recopilamos</h2>
             <p><strong>a) Datos de Apple Salud (HealthKit)</strong></p>
             <ul><li>Duración y fases del sueño</li><li>Variabilidad de la frecuencia cardíaca (VFC)</li><li>Frecuencia cardíaca en reposo</li><li>Saturación de oxígeno en sangre (SpO2)</li><li>Conteo diario de pasos y datos de actividad</li></ul>
             <p><strong>b) Datos de la cámara</strong></p>
-            <ul><li>Fotos de análisis de piel (mediante la cámara frontal)</li><li>Las fotos se cifran y almacenan únicamente en tu dispositivo</li></ul>
+            <ul><li>Fotos de análisis de piel (mediante la cámara frontal)</li><li>Las fotos se cifran y almacenan en tu dispositivo</li><li>Si usas el Análisis en la Nube de OPUS Pro, las fotos se envían de forma segura a nuestro backend para análisis con IA (ver Sección 3)</li></ul>
             <p><strong>c) Datos ingresados manualmente</strong></p>
             <ul><li>Consumo de cafeína</li><li>Consumo de alcohol</li><li>Consumo de agua (hidratación)</li><li>Información de perfil (nombre, edad, género — opcional)</li><li>Seguimiento del ciclo menstrual (opcional)</li></ul>
 
-            <h2>3. Cómo usamos tus datos</h2>
+            <h2>3. Análisis en la Nube (OPUS Pro)</h2>
+            <p>Los suscriptores de OPUS Pro pueden usar la función de Análisis de Piel en la Nube. Al usar esta función:</p>
+            <ul>
+                <li>Tus fotos de análisis de piel se transmiten de forma segura a nuestro servidor backend alojado en <strong>Railway</strong> (railway.com)</li>
+                <li>Nuestro servidor envía las imágenes a la <strong>API de OpenAI (GPT-4o)</strong> para análisis de piel con IA</li>
+                <li>Los resultados del análisis se devuelven a tu dispositivo</li>
+                <li>Las fotos enviadas para análisis en la nube se procesan en tiempo real y <strong>no se almacenan permanentemente</strong> en nuestros servidores ni en los de OpenAI</li>
+                <li>OpenAI procesa los datos de acuerdo con su política de uso de datos de API — los datos de API no se usan para entrenar sus modelos</li>
+            </ul>
+            <div class="highlight"><strong>Siempre tienes el control:</strong> El Análisis en la Nube es una función opcional. Puedes usar OPUS sin enviar fotos a la nube.</div>
+
+            <h2>4. Sincronización de datos</h2>
+            <p>OPUS utiliza <strong>Supabase</strong> (supabase.com) para sincronización en la nube opcional:</p>
+            <ul>
+                <li>Si creas una cuenta o activas la sincronización, tus datos de perfil y resúmenes de salud pueden almacenarse en la infraestructura en la nube de Supabase</li>
+                <li>Los datos se transmiten mediante conexiones cifradas (TLS) y se almacenan de forma segura</li>
+                <li>Los servidores de Supabase están alojados en infraestructura de AWS</li>
+                <li>Puedes usar OPUS sin crear una cuenta — la sincronización es completamente opcional</li>
+                <li>Puedes eliminar tus datos sincronizados en cualquier momento (ver Sección 9)</li>
+            </ul>
+
+            <h2>5. Cómo usamos tus datos</h2>
             <ul><li>Calcular tu línea base biológica personal</li><li>Determinar el modo diario (Descanso / Estable / Impulso)</li><li>Análisis de correlación y patrones</li><li>Información y recomendaciones personalizadas</li></ul>
             <div class="highlight">OPUS es una aplicación de seguimiento de salud, no un dispositivo médico. La información proporcionada no reemplaza el diagnóstico, la evaluación ni el tratamiento médico.</div>
 
-            <h2>4. Almacenamiento y seguridad de datos</h2>
-            <ul><li>Todos los datos se procesan y almacenan exclusivamente en tu dispositivo</li><li>La sincronización con iCloud es opcional y está completamente bajo tu control</li><li>Cuando se usa iCloud, los datos están protegidos por la infraestructura de cifrado de Apple</li><li>No se envían datos a servidores de terceros</li><li>Las fotos de análisis de piel se almacenan cifradas en el dispositivo</li></ul>
+            <h2>6. Almacenamiento y seguridad de datos</h2>
+            <ul>
+                <li>Los datos locales se procesan y almacenan en tu dispositivo</li>
+                <li>La sincronización con iCloud es opcional y está completamente bajo tu control</li>
+                <li>Cuando se usa iCloud, los datos están protegidos por la infraestructura de cifrado de Apple</li>
+                <li>Las fotos de análisis de piel se almacenan cifradas en el dispositivo</li>
+                <li>Los datos sincronizados en la nube (vía Supabase) están cifrados en tránsito y en reposo</li>
+                <li>Las fotos de Análisis en la Nube (vía Railway/OpenAI) se procesan en tiempo real y no se almacenan permanentemente</li>
+            </ul>
 
-            <h2>5. Compartición con terceros</h2>
-            <ul><li>No se transmiten datos a redes publicitarias</li><li>No se envían datos de salud personal a servicios de análisis</li><li>No se venden ni intercambian datos</li><li>Los datos de HealthKit están protegidos de acuerdo con las directrices de Apple</li></ul>
+            <h2>7. Servicios de terceros</h2>
+            <p>OPUS se integra con los siguientes servicios de terceros:</p>
+            <ul>
+                <li><strong>API de OpenAI (GPT-4o):</strong> Utilizado para el Análisis de Piel en la Nube de OPUS Pro. Las fotos se envían a través de nuestro backend para análisis con IA. OpenAI no usa datos de API para entrenar modelos</li>
+                <li><strong>Supabase:</strong> Utilizado para cuenta opcional y sincronización de datos. Alojado en infraestructura de AWS</li>
+                <li><strong>Railway:</strong> Aloja nuestro servidor backend que procesa solicitudes de Análisis en la Nube</li>
+                <li><strong>Apple HealthKit:</strong> Los datos están protegidos de acuerdo con las directrices de Apple</li>
+            </ul>
+            <p>No:</p>
+            <ul>
+                <li>Transmitimos datos a redes publicitarias</li>
+                <li>Vendemos ni intercambiamos tus datos</li>
+                <li>Compartimos datos de salud personal con servicios de análisis con fines de marketing</li>
+            </ul>
 
-            <h2>6. Publicidad</h2>
+            <h2>8. Publicidad</h2>
             <p>OPUS no contiene publicidad y no recopila datos con fines publicitarios.</p>
 
-            <h2>7. Tus derechos</h2>
-            <ul><li><strong>Eliminación de datos:</strong> Elimina permanentemente todos tus datos a través de Ajustes &gt; Eliminar todos los datos</li><li><strong>Gestión de permisos:</strong> Activa o desactiva los permisos de HealthKit y cámara en cualquier momento a través de los Ajustes de iOS</li><li><strong>Gestión de suscripción:</strong> Se gestiona a través de Ajustes de Apple &gt; Suscripciones</li></ul>
+            <h2>9. Tus derechos</h2>
+            <ul>
+                <li><strong>Eliminación de datos:</strong> Elimina permanentemente todos tus datos locales a través de Ajustes &gt; Eliminar todos los datos</li>
+                <li><strong>Eliminación de cuenta:</strong> Si creaste una cuenta, puedes solicitar la eliminación completa de tus datos en la nube y tu cuenta contactándonos en <a href="mailto:opusbio.hello@gmail.com">opusbio.hello@gmail.com</a></li>
+                <li><strong>Gestión de permisos:</strong> Activa o desactiva los permisos de HealthKit y cámara en cualquier momento a través de los Ajustes de iOS</li>
+                <li><strong>Gestión de suscripción:</strong> Se gestiona a través de Ajustes de Apple &gt; Suscripciones</li>
+            </ul>
 
-            <h2>8. Privacidad de los menores</h2>
-            <p>OPUS no está destinado a usuarios menores de 17 años. No recopilamos conscientemente datos de usuarios menores de 17 años.</p>
+            <h2>10. Privacidad de los menores</h2>
+            <p>OPUS no está destinado a usuarios menores de 13 años. No recopilamos conscientemente datos de usuarios menores de 13 años.</p>
 
-            <h2>9. Cambios</h2>
+            <h2>11. Cambios</h2>
             <p>Esta política de privacidad puede actualizarse. Los cambios importantes se comunicarán a través de la aplicación.</p>
 
-            <h2>10. Contacto</h2>
-            <p><a href="mailto:YOUR_EMAIL@example.com">opusbio.hello@gmail.com</a></p>
+            <h2>12. Contacto</h2>
+            <p><a href="mailto:opusbio.hello@gmail.com">opusbio.hello@gmail.com</a></p>
+        </div>
+
+        <!-- ═══ FRANÇAIS ═══ -->
+        <div id="fr" class="section">
+            <p><strong>Dernière mise à jour :</strong> 9 mars 2026</p>
+
+            <h2>1. Aperçu</h2>
+            <p>OPUS est une application iOS qui suit vos signaux biologiques et fournit des informations de santé personnalisées. Votre vie privée est notre priorité absolue.</p>
+            <div class="highlight"><strong>Notre principe fondamental :</strong> La plupart de vos données restent sur votre appareil. Lorsque vous utilisez les fonctionnalités OPUS Pro telles que l'Analyse Cutanée Cloud, certaines données sont transmises de manière sécurisée à nos serveurs pour traitement, comme décrit ci-dessous.</div>
+
+            <h2>2. Données collectées</h2>
+            <p><strong>a) Données Apple Santé (HealthKit)</strong></p>
+            <ul><li>Durée et phases du sommeil</li><li>Variabilité de la fréquence cardiaque (VFC)</li><li>Fréquence cardiaque au repos</li><li>Saturation en oxygène du sang (SpO2)</li><li>Nombre de pas quotidien et données d'activité</li></ul>
+            <p><strong>b) Données de la caméra</strong></p>
+            <ul><li>Photos d'analyse cutanée (via la caméra frontale)</li><li>Les photos sont cryptées et stockées sur votre appareil</li><li>Si vous utilisez l'Analyse Cloud OPUS Pro, les photos sont envoyées de manière sécurisée à notre backend pour analyse par IA (voir Section 3)</li></ul>
+            <p><strong>c) Données saisies manuellement</strong></p>
+            <ul><li>Consommation de caféine</li><li>Consommation d'alcool</li><li>Consommation d'eau (hydratation)</li><li>Informations de profil (nom, âge, sexe — facultatif)</li><li>Suivi du cycle menstruel (facultatif)</li></ul>
+
+            <h2>3. Analyse Cloud (OPUS Pro)</h2>
+            <p>Les abonnés OPUS Pro peuvent utiliser la fonction d'Analyse Cutanée Cloud. Lors de l'utilisation de cette fonction :</p>
+            <ul>
+                <li>Vos photos d'analyse cutanée sont transmises de manière sécurisée à notre serveur backend hébergé sur <strong>Railway</strong> (railway.com)</li>
+                <li>Notre serveur envoie les images à l'<strong>API OpenAI (GPT-4o)</strong> pour une analyse cutanée par IA</li>
+                <li>Les résultats d'analyse sont renvoyés à votre appareil</li>
+                <li>Les photos envoyées pour l'analyse cloud sont traitées en temps réel et ne sont <strong>pas stockées de manière permanente</strong> sur nos serveurs ni sur ceux d'OpenAI</li>
+                <li>OpenAI traite les données conformément à sa politique d'utilisation des données API — les données API ne sont pas utilisées pour entraîner leurs modèles</li>
+            </ul>
+            <div class="highlight"><strong>Vous gardez le contrôle :</strong> L'Analyse Cloud est une fonctionnalité optionnelle. Vous pouvez utiliser OPUS sans jamais envoyer de photos vers le cloud.</div>
+
+            <h2>4. Synchronisation des données</h2>
+            <p>OPUS utilise <strong>Supabase</strong> (supabase.com) pour la synchronisation cloud optionnelle :</p>
+            <ul>
+                <li>Si vous créez un compte ou activez la synchronisation, vos données de profil et résumés de santé peuvent être stockés dans l'infrastructure cloud de Supabase</li>
+                <li>Les données sont transmises via des connexions cryptées (TLS) et stockées de manière sécurisée</li>
+                <li>Les serveurs Supabase sont hébergés sur l'infrastructure AWS</li>
+                <li>Vous pouvez utiliser OPUS sans créer de compte — la synchronisation est entièrement facultative</li>
+                <li>Vous pouvez supprimer vos données synchronisées à tout moment (voir Section 9)</li>
+            </ul>
+
+            <h2>5. Utilisation des données</h2>
+            <ul><li>Calcul de votre référence biologique personnelle</li><li>Détermination du mode quotidien (Repos / Stable / Élan)</li><li>Analyse de corrélations et de tendances</li><li>Informations et recommandations personnalisées</li></ul>
+            <div class="highlight">OPUS est une application de suivi de santé, pas un dispositif médical. Les informations fournies ne remplacent pas un diagnostic, une évaluation ou un traitement médical.</div>
+
+            <h2>6. Stockage et sécurité des données</h2>
+            <ul>
+                <li>Les données locales sont traitées et stockées sur votre appareil</li>
+                <li>La synchronisation iCloud est facultative et entièrement sous votre contrôle</li>
+                <li>En cas d'utilisation d'iCloud, les données sont protégées par l'infrastructure de chiffrement d'Apple</li>
+                <li>Les photos d'analyse cutanée sont stockées de manière cryptée sur l'appareil</li>
+                <li>Les données synchronisées dans le cloud (via Supabase) sont cryptées en transit et au repos</li>
+                <li>Les photos d'Analyse Cloud (via Railway/OpenAI) sont traitées en temps réel et non stockées de manière permanente</li>
+            </ul>
+
+            <h2>7. Services tiers</h2>
+            <p>OPUS s'intègre aux services tiers suivants :</p>
+            <ul>
+                <li><strong>API OpenAI (GPT-4o) :</strong> Utilisée pour l'Analyse Cutanée Cloud OPUS Pro. Les photos sont envoyées via notre backend pour analyse par IA. OpenAI n'utilise pas les données API pour entraîner ses modèles</li>
+                <li><strong>Supabase :</strong> Utilisé pour le compte optionnel et la synchronisation des données. Hébergé sur l'infrastructure AWS</li>
+                <li><strong>Railway :</strong> Héberge notre serveur backend pour le traitement des demandes d'Analyse Cloud</li>
+                <li><strong>Apple HealthKit :</strong> Les données sont protégées conformément aux directives d'Apple</li>
+            </ul>
+            <p>Nous ne :</p>
+            <ul>
+                <li>Transmettons aucune donnée aux réseaux publicitaires</li>
+                <li>Vendons ni n'échangeons vos données</li>
+                <li>Partageons aucune donnée de santé personnelle avec des services d'analyse à des fins marketing</li>
+            </ul>
+
+            <h2>8. Publicité</h2>
+            <p>OPUS ne contient pas de publicité et ne collecte pas de données à des fins publicitaires.</p>
+
+            <h2>9. Vos droits</h2>
+            <ul>
+                <li><strong>Suppression des données :</strong> Supprimez définitivement toutes vos données locales via Réglages &gt; Supprimer toutes les données</li>
+                <li><strong>Suppression du compte :</strong> Si vous avez créé un compte, vous pouvez demander la suppression complète de vos données cloud et de votre compte en nous contactant à <a href="mailto:opusbio.hello@gmail.com">opusbio.hello@gmail.com</a></li>
+                <li><strong>Gestion des autorisations :</strong> Activez ou désactivez les autorisations HealthKit et caméra à tout moment via les Réglages iOS</li>
+                <li><strong>Gestion de l'abonnement :</strong> Gérée via Réglages Apple &gt; Abonnements</li>
+            </ul>
+
+            <h2>10. Confidentialité des enfants</h2>
+            <p>OPUS ne s'adresse pas aux utilisateurs de moins de 13 ans. Nous ne collectons pas sciemment les données d'utilisateurs de moins de 13 ans.</p>
+
+            <h2>11. Modifications</h2>
+            <p>Cette politique de confidentialité peut être mise à jour. Les modifications importantes seront communiquées via l'application.</p>
+
+            <h2>12. Contact</h2>
+            <p><a href="mailto:opusbio.hello@gmail.com">opusbio.hello@gmail.com</a></p>
+        </div>
+
+        <!-- ═══ TÜRKÇE ═══ -->
+        <div id="tr" class="section">
+            <p><strong>Son güncelleme:</strong> 9 Mart 2026</p>
+
+            <h2>1. Genel Bakış</h2>
+            <p>OPUS, biyolojik sinyallerinizi takip eden ve kişiselleştirilmiş sağlık içgörüleri sunan bir iOS uygulamasıdır. Gizliliğiniz bizim için en önemli önceliktir.</p>
+            <div class="highlight"><strong>Temel ilkemiz:</strong> Verilerinizin büyük bölümü cihazınızda kalır. Bulut Cilt Analizi gibi OPUS Pro özelliklerini kullandığınızda, seçili veriler aşağıda açıklandığı şekilde güvenli olarak sunucularımıza iletilir.</div>
+
+            <h2>2. Toplanan Veriler</h2>
+            <p><strong>a) Apple Sağlık (HealthKit) Verileri</strong></p>
+            <ul><li>Uyku süresi ve uyku evreleri</li><li>Kalp atış hızı değişkenliği (HRV)</li><li>Dinlenme kalp atış hızı</li><li>Kan oksijen doygunluğu (SpO2)</li><li>Günlük adım sayısı ve aktivite verileri</li></ul>
+            <p><strong>b) Kamera Verileri</strong></p>
+            <ul><li>Cilt taraması fotoğrafları (ön kamera ile)</li><li>Fotoğraflar şifreli olarak cihazınızda saklanır</li><li>OPUS Pro Bulut Analizi kullanıyorsanız, fotoğraflar yapay zeka analizi için güvenli olarak backend sunucumuza gönderilir (bkz. Bölüm 3)</li></ul>
+            <p><strong>c) Manuel Giriş Verileri</strong></p>
+            <ul><li>Kafein tüketimi</li><li>Alkol tüketimi</li><li>Su tüketimi (hidrasyon)</li><li>Profil bilgileri (isim, yaş, cinsiyet — isteğe bağlı)</li><li>Regl döngüsü takibi (isteğe bağlı)</li></ul>
+
+            <h2>3. Bulut Analizi (OPUS Pro)</h2>
+            <p>OPUS Pro aboneleri Bulut Cilt Analizi özelliğini kullanabilir. Bu özelliği kullandığınızda:</p>
+            <ul>
+                <li>Cilt taraması fotoğraflarınız <strong>Railway</strong> (railway.com) üzerinde barındırılan backend sunucumuza güvenli olarak iletilir</li>
+                <li>Sunucumuz görüntüleri yapay zeka destekli cilt analizi için <strong>OpenAI API'sine (GPT-4o)</strong> gönderir</li>
+                <li>Analiz sonuçları cihazınıza geri gönderilir</li>
+                <li>Bulut analizi için gönderilen fotoğraflar gerçek zamanlı olarak işlenir ve sunucularımızda veya OpenAI sunucularında <strong>kalıcı olarak saklanmaz</strong></li>
+                <li>OpenAI, verileri API veri kullanım politikasına uygun olarak işler — API verileri modellerini eğitmek için kullanılmaz</li>
+            </ul>
+            <div class="highlight"><strong>Kontrol her zaman sizdedir:</strong> Bulut Analizi isteğe bağlı bir özelliktir. OPUS'u fotoğrafları buluta göndermeden kullanabilirsiniz.</div>
+
+            <h2>4. Veri Senkronizasyonu</h2>
+            <p>OPUS, isteğe bağlı bulut senkronizasyonu için <strong>Supabase</strong> (supabase.com) kullanır:</p>
+            <ul>
+                <li>Bir hesap oluşturur veya senkronizasyonu etkinleştirirseniz, profil verileriniz ve sağlık özetleriniz Supabase'in bulut altyapısında saklanabilir</li>
+                <li>Veriler şifreli bağlantılar (TLS) üzerinden iletilir ve güvenli olarak saklanır</li>
+                <li>Supabase sunucuları AWS altyapısında barındırılır</li>
+                <li>OPUS'u hesap oluşturmadan kullanabilirsiniz — senkronizasyon tamamen isteğe bağlıdır</li>
+                <li>Senkronize edilen verilerinizi istediğiniz zaman silebilirsiniz (bkz. Bölüm 9)</li>
+            </ul>
+
+            <h2>5. Verilerin Kullanım Amacı</h2>
+            <ul><li>Kişisel biyolojik baseline hesaplama</li><li>Günlük mod belirleme (Dinlen / Devam / Zorla)</li><li>Korelasyon ve pattern analizi</li><li>Kişiselleştirilmiş içgörü ve öneriler</li></ul>
+            <div class="highlight">OPUS bir sağlık takip uygulamasıdır, tıbbi cihaz değildir. Sağlanan bilgiler tıbbi teşhis, tanı veya tedavi yerine geçmez.</div>
+
+            <h2>6. Veri Depolama ve Güvenlik</h2>
+            <ul>
+                <li>Yerel veriler cihazınızda işlenir ve saklanır</li>
+                <li>iCloud senkronizasyonu isteğe bağlıdır ve tamamen kullanıcı kontrolündedir</li>
+                <li>iCloud kullanılsa bile veriler Apple'ın şifreleme altyapısıyla korunur</li>
+                <li>Cilt tarama fotoğrafları cihaz üzerinde şifreli olarak saklanır</li>
+                <li>Bulut senkronize veriler (Supabase üzerinden) aktarım sırasında ve beklemede şifrelenir</li>
+                <li>Bulut Analizi fotoğrafları (Railway/OpenAI üzerinden) gerçek zamanlı işlenir ve kalıcı olarak saklanmaz</li>
+            </ul>
+
+            <h2>7. Üçüncü Taraf Hizmetleri</h2>
+            <p>OPUS aşağıdaki üçüncü taraf hizmetlerle entegre çalışır:</p>
+            <ul>
+                <li><strong>OpenAI API (GPT-4o):</strong> OPUS Pro Bulut Cilt Analizi için kullanılır. Fotoğraflar yapay zeka analizi için backend üzerinden gönderilir. OpenAI, API verilerini model eğitimi için kullanmaz</li>
+                <li><strong>Supabase:</strong> İsteğe bağlı hesap ve veri senkronizasyonu için kullanılır. AWS altyapısında barındırılır</li>
+                <li><strong>Railway:</strong> Bulut Analizi isteklerini işleyen backend sunucumuzu barındırır</li>
+                <li><strong>Apple HealthKit:</strong> Veriler Apple kurallarına uygun olarak korunur</li>
+            </ul>
+            <p>Biz:</p>
+            <ul>
+                <li>Reklam ağlarına veri aktarmayız</li>
+                <li>Verilerinizi satmayız veya takas etmeyiz</li>
+                <li>Pazarlama amaçlı analitik servislerle kişisel sağlık verilerini paylaşmayız</li>
+            </ul>
+
+            <h2>8. Reklam</h2>
+            <p>OPUS reklam içermez ve reklam amacıyla veri toplamaz.</p>
+
+            <h2>9. Kullanıcı Hakları</h2>
+            <ul>
+                <li><strong>Veri silme:</strong> Ayarlar &gt; Tüm Verileri Sil ile tüm yerel verilerinizi kalıcı olarak silebilirsiniz</li>
+                <li><strong>Hesap silme:</strong> Bir hesap oluşturduysanız, bulut verilerinizin ve hesabınızın tamamen silinmesini <a href="mailto:opusbio.hello@gmail.com">opusbio.hello@gmail.com</a> adresinden talep edebilirsiniz</li>
+                <li><strong>İzin yönetimi:</strong> iOS Ayarlar üzerinden HealthKit ve kamera izinlerini istediğiniz zaman açıp kapatabilirsiniz</li>
+                <li><strong>Abonelik yönetimi:</strong> Apple Ayarlar &gt; Abonelikler üzerinden yönetilir</li>
+            </ul>
+
+            <h2>10. Çocukların Gizliliği</h2>
+            <p>OPUS 13 yaş altı kullanıcılara yönelik değildir. Bilerek 13 yaş altı kullanıcılardan veri toplamayız.</p>
+
+            <h2>11. Değişiklikler</h2>
+            <p>Bu gizlilik politikası güncellenebilir. Önemli değişiklikler uygulama içinden bildirilecektir.</p>
+
+            <h2>12. İletişim</h2>
+            <p><a href="mailto:opusbio.hello@gmail.com">opusbio.hello@gmail.com</a></p>
         </div>
 
         <!-- ═══ 日本語 ═══ -->
         <div id="ja" class="section">
-            <p><strong>最終更新日：</strong>2026年2月24日</p>
+            <p><strong>最終更新日：</strong>2026年3月9日</p>
 
             <h2>1. 概要</h2>
             <p>OPUSは、生体シグナルを追跡し、パーソナライズされた健康インサイトを提供するiOSアプリケーションです。お客様のプライバシーは私たちの最優先事項です。</p>
-            <div class="highlight"><strong>基本理念：</strong>すべてのデータはお使いのデバイスに保存されます。個人の健康データが外部サーバーに送信されることは一切ありません。</div>
+            <div class="highlight"><strong>基本理念：</strong>お客様のデータの大部分はデバイスに保存されます。クラウド肌分析などのOPUS Pro機能をご利用の場合、以下に説明する通り、選択されたデータが安全にサーバーに送信されます。</div>
 
             <h2>2. 収集するデータ</h2>
             <p><strong>a) Apple ヘルスケア（HealthKit）データ</strong></p>
             <ul><li>睡眠時間と睡眠ステージ</li><li>心拍変動（HRV）</li><li>安静時心拍数</li><li>血中酸素飽和度（SpO2）</li><li>1日の歩数とアクティビティデータ</li></ul>
             <p><strong>b) カメラデータ</strong></p>
-            <ul><li>肌スキャン写真（フロントカメラ使用）</li><li>写真は暗号化され、デバイス上にのみ保存されます</li></ul>
+            <ul><li>肌スキャン写真（フロントカメラ使用）</li><li>写真は暗号化されデバイスに保存されます</li><li>OPUS Proクラウド分析を使用する場合、写真はAI分析のためにバックエンドに安全に送信されます（セクション3参照）</li></ul>
             <p><strong>c) 手動入力データ</strong></p>
             <ul><li>カフェイン摂取量</li><li>アルコール摂取量</li><li>水分摂取量（水分補給）</li><li>プロフィール情報（名前、年齢、性別 — 任意）</li><li>月経周期トラッキング（任意）</li></ul>
 
-            <h2>3. データの利用目的</h2>
+            <h2>3. クラウド分析（OPUS Pro）</h2>
+            <p>OPUS Proサブスクリプションユーザーはクラウド肌分析機能を利用できます。この機能を使用する際：</p>
+            <ul>
+                <li>肌スキャン写真は<strong>Railway</strong>（railway.com）でホストされている当社のバックエンドサーバーに安全に送信されます</li>
+                <li>当社のサーバーが画像をAIによる肌分析のため<strong>OpenAI API（GPT-4o）</strong>に送信します</li>
+                <li>分析結果がお客様のデバイスに返されます</li>
+                <li>クラウド分析用に送信された写真はリアルタイムで処理され、当社のサーバーやOpenAIのサーバーに<strong>永続的に保存されることはありません</strong></li>
+                <li>OpenAIはAPIデータ使用ポリシーに従ってデータを処理します — APIデータはモデルのトレーニングに使用されません</li>
+            </ul>
+            <div class="highlight"><strong>常にお客様が管理：</strong>クラウド分析はオプトイン機能です。写真をクラウドに送信せずにOPUSを使用できます。</div>
+
+            <h2>4. データ同期</h2>
+            <p>OPUSはオプションのクラウド同期に<strong>Supabase</strong>（supabase.com）を使用します：</p>
+            <ul>
+                <li>アカウントを作成するか同期を有効にすると、プロフィールデータと健康サマリーがSupabaseのクラウドインフラに保存される場合があります</li>
+                <li>データは暗号化された接続（TLS）で送信され、安全に保存されます</li>
+                <li>SupabaseサーバーはAWSインフラでホストされています</li>
+                <li>アカウントを作成せずにOPUSを使用できます — 同期は完全にオプションです</li>
+                <li>同期されたデータはいつでも削除できます（セクション9参照）</li>
+            </ul>
+
+            <h2>5. データの利用目的</h2>
             <ul><li>個人の生体ベースラインの算出</li><li>日々のモード判定（リカバー / ステディ / スライブ）</li><li>相関関係とパターン分析</li><li>パーソナライズされたインサイトと提案</li></ul>
             <div class="highlight">OPUSは健康トラッキングアプリケーションであり、医療機器ではありません。提供される情報は、医療診断、評価、治療の代替となるものではありません。</div>
 
-            <h2>4. データの保存とセキュリティ</h2>
-            <ul><li>すべてのデータはお使いのデバイス上でのみ処理・保存されます</li><li>iCloud同期はオプションであり、完全にユーザーの管理下にあります</li><li>iCloudを使用する場合、データはAppleの暗号化インフラで保護されます</li><li>第三者のサーバーにデータが送信されることはありません</li><li>肌スキャン写真はデバイス上で暗号化して保存されます</li></ul>
+            <h2>6. データの保存とセキュリティ</h2>
+            <ul>
+                <li>ローカルデータはデバイス上で処理・保存されます</li>
+                <li>iCloud同期はオプションであり、完全にユーザーの管理下にあります</li>
+                <li>iCloudを使用する場合、データはAppleの暗号化インフラで保護されます</li>
+                <li>肌スキャン写真はデバイス上で暗号化して保存されます</li>
+                <li>クラウド同期データ（Supabase経由）は転送中および保存時に暗号化されます</li>
+                <li>クラウド分析写真（Railway/OpenAI経由）はリアルタイムで処理され、永続的に保存されません</li>
+            </ul>
 
-            <h2>5. 第三者への共有</h2>
-            <ul><li>広告ネットワークへのデータ送信なし</li><li>分析サービスへの個人健康データの送信なし</li><li>データの売買・取引なし</li><li>HealthKitデータはAppleのガイドラインに準拠して保護されます</li></ul>
+            <h2>7. サードパーティサービス</h2>
+            <p>OPUSは以下のサードパーティサービスと統合しています：</p>
+            <ul>
+                <li><strong>OpenAI API（GPT-4o）：</strong>OPUS Proクラウド肌分析に使用。写真はAI分析のためにバックエンド経由で送信されます。OpenAIはAPIデータをモデルトレーニングに使用しません</li>
+                <li><strong>Supabase：</strong>オプションのアカウントとデータ同期に使用。AWSインフラでホスト</li>
+                <li><strong>Railway：</strong>クラウド分析リクエストを処理するバックエンドサーバーをホスト</li>
+                <li><strong>Apple HealthKit：</strong>データはAppleのガイドラインに準拠して保護されます</li>
+            </ul>
+            <p>当社は：</p>
+            <ul>
+                <li>広告ネットワークにデータを送信しません</li>
+                <li>お客様のデータを売買・取引しません</li>
+                <li>マーケティング目的で分析サービスと個人健康データを共有しません</li>
+            </ul>
 
-            <h2>6. 広告</h2>
+            <h2>8. 広告</h2>
             <p>OPUSには広告は含まれておらず、広告目的でデータを収集することはありません。</p>
 
-            <h2>7. ユーザーの権利</h2>
-            <ul><li><strong>データの削除：</strong>設定 &gt; すべてのデータを削除から、すべてのデータを永久に削除できます</li><li><strong>権限の管理：</strong>iOS設定からHealthKitおよびカメラの権限をいつでも有効・無効にできます</li><li><strong>サブスクリプションの管理：</strong>Apple設定 &gt; サブスクリプションから管理されます</li></ul>
+            <h2>9. ユーザーの権利</h2>
+            <ul>
+                <li><strong>データの削除：</strong>設定 &gt; すべてのデータを削除から、すべてのローカルデータを永久に削除できます</li>
+                <li><strong>アカウントの削除：</strong>アカウントを作成した場合、<a href="mailto:opusbio.hello@gmail.com">opusbio.hello@gmail.com</a>にご連絡いただくことで、クラウドデータとアカウントの完全な削除をリクエストできます</li>
+                <li><strong>権限の管理：</strong>iOS設定からHealthKitおよびカメラの権限をいつでも有効・無効にできます</li>
+                <li><strong>サブスクリプションの管理：</strong>Apple設定 &gt; サブスクリプションから管理されます</li>
+            </ul>
 
-            <h2>8. 子どものプライバシー</h2>
-            <p>OPUSは17歳未満のユーザーを対象としていません。17歳未満のユーザーから意図的にデータを収集することはありません。</p>
+            <h2>10. 子どものプライバシー</h2>
+            <p>OPUSは13歳未満のユーザーを対象としていません。13歳未満のユーザーから意図的にデータを収集することはありません。</p>
 
-            <h2>9. 変更</h2>
+            <h2>11. 変更</h2>
             <p>このプライバシーポリシーは更新される場合があります。重要な変更はアプリケーションを通じてお知らせします。</p>
 
-            <h2>10. お問い合わせ</h2>
-            <p><a href="mailto:YOUR_EMAIL@example.com">opusbio.hello@gmail.com</a></p>
+            <h2>12. お問い合わせ</h2>
+            <p><a href="mailto:opusbio.hello@gmail.com">opusbio.hello@gmail.com</a></p>
         </div>
 
         <!-- ═══ 한국어 ═══ -->
         <div id="ko" class="section">
-            <p><strong>최종 업데이트:</strong> 2026년 2월 24일</p>
+            <p><strong>최종 업데이트:</strong> 2026년 3월 9일</p>
 
             <h2>1. 개요</h2>
             <p>OPUS는 생체 신호를 추적하고 개인 맞춤 건강 인사이트를 제공하는 iOS 애플리케이션입니다. 귀하의 개인정보 보호는 저희의 최우선 과제입니다.</p>
-            <div class="highlight"><strong>핵심 원칙:</strong> 모든 데이터는 귀하의 기기에 저장됩니다. 개인 건강 데이터가 외부 서버로 전송되는 일은 절대 없습니다.</div>
+            <div class="highlight"><strong>핵심 원칙:</strong> 대부분의 데이터는 귀하의 기기에 저장됩니다. 클라우드 피부 분석과 같은 OPUS Pro 기능을 사용할 때, 선택된 데이터가 아래에 설명된 대로 안전하게 서버로 전송됩니다.</div>
 
             <h2>2. 수집하는 데이터</h2>
             <p><strong>a) Apple 건강(HealthKit) 데이터</strong></p>
             <ul><li>수면 시간 및 수면 단계</li><li>심박변이도(HRV)</li><li>안정 시 심박수</li><li>혈중 산소 포화도(SpO2)</li><li>일일 걸음 수 및 활동 데이터</li></ul>
             <p><strong>b) 카메라 데이터</strong></p>
-            <ul><li>피부 스캔 사진 (전면 카메라 사용)</li><li>사진은 암호화되어 기기에만 저장됩니다</li></ul>
+            <ul><li>피부 스캔 사진 (전면 카메라 사용)</li><li>사진은 암호화되어 기기에 저장됩니다</li><li>OPUS Pro 클라우드 분석을 사용하는 경우, 사진은 AI 분석을 위해 백엔드로 안전하게 전송됩니다 (섹션 3 참조)</li></ul>
             <p><strong>c) 수동 입력 데이터</strong></p>
             <ul><li>카페인 섭취량</li><li>알코올 섭취량</li><li>수분 섭취량 (수분 보충)</li><li>프로필 정보 (이름, 나이, 성별 — 선택 사항)</li><li>생리 주기 추적 (선택 사항)</li></ul>
 
-            <h2>3. 데이터 사용 목적</h2>
+            <h2>3. 클라우드 분석 (OPUS Pro)</h2>
+            <p>OPUS Pro 구독자는 클라우드 피부 분석 기능을 사용할 수 있습니다. 이 기능을 사용할 때:</p>
+            <ul>
+                <li>피부 스캔 사진은 <strong>Railway</strong>(railway.com)에서 호스팅되는 백엔드 서버로 안전하게 전송됩니다</li>
+                <li>당사 서버는 AI 기반 피부 분석을 위해 이미지를 <strong>OpenAI API(GPT-4o)</strong>로 전송합니다</li>
+                <li>분석 결과가 귀하의 기기로 반환됩니다</li>
+                <li>클라우드 분석을 위해 전송된 사진은 실시간으로 처리되며 당사 서버나 OpenAI 서버에 <strong>영구적으로 저장되지 않습니다</strong></li>
+                <li>OpenAI는 API 데이터 사용 정책에 따라 데이터를 처리합니다 — API 데이터는 모델 훈련에 사용되지 않습니다</li>
+            </ul>
+            <div class="highlight"><strong>항상 귀하가 통제합니다:</strong> 클라우드 분석은 선택적 기능입니다. 사진을 클라우드로 보내지 않고도 OPUS를 사용할 수 있습니다.</div>
+
+            <h2>4. 데이터 동기화</h2>
+            <p>OPUS는 선택적 클라우드 동기화를 위해 <strong>Supabase</strong>(supabase.com)를 사용합니다:</p>
+            <ul>
+                <li>계정을 만들거나 동기화를 활성화하면 프로필 데이터와 건강 요약이 Supabase의 클라우드 인프라에 저장될 수 있습니다</li>
+                <li>데이터는 암호화된 연결(TLS)을 통해 전송되고 안전하게 저장됩니다</li>
+                <li>Supabase 서버는 AWS 인프라에서 호스팅됩니다</li>
+                <li>계정을 만들지 않고도 OPUS를 사용할 수 있습니다 — 동기화는 완전히 선택 사항입니다</li>
+                <li>동기화된 데이터는 언제든지 삭제할 수 있습니다 (섹션 9 참조)</li>
+            </ul>
+
+            <h2>5. 데이터 사용 목적</h2>
             <ul><li>개인 생체 기준선(베이스라인) 계산</li><li>일일 모드 결정 (회복 / 안정 / 활력)</li><li>상관관계 및 패턴 분석</li><li>맞춤형 인사이트 및 추천</li></ul>
             <div class="highlight">OPUS는 건강 추적 애플리케이션이며 의료 기기가 아닙니다. 제공되는 정보는 의료 진단, 평가 또는 치료를 대체하지 않습니다.</div>
 
-            <h2>4. 데이터 저장 및 보안</h2>
-            <ul><li>모든 데이터는 귀하의 기기에서만 처리 및 저장됩니다</li><li>iCloud 동기화는 선택 사항이며 전적으로 사용자가 관리합니다</li><li>iCloud 사용 시 데이터는 Apple의 암호화 인프라로 보호됩니다</li><li>제3자 서버로 데이터가 전송되지 않습니다</li><li>피부 스캔 사진은 기기에서 암호화되어 저장됩니다</li></ul>
+            <h2>6. 데이터 저장 및 보안</h2>
+            <ul>
+                <li>로컬 데이터는 귀하의 기기에서 처리 및 저장됩니다</li>
+                <li>iCloud 동기화는 선택 사항이며 전적으로 사용자가 관리합니다</li>
+                <li>iCloud 사용 시 데이터는 Apple의 암호화 인프라로 보호됩니다</li>
+                <li>피부 스캔 사진은 기기에서 암호화되어 저장됩니다</li>
+                <li>클라우드 동기화 데이터(Supabase 경유)는 전송 중 및 저장 시 암호화됩니다</li>
+                <li>클라우드 분석 사진(Railway/OpenAI 경유)은 실시간으로 처리되며 영구적으로 저장되지 않습니다</li>
+            </ul>
 
-            <h2>5. 제3자 공유</h2>
-            <ul><li>광고 네트워크로의 데이터 전송 없음</li><li>분석 서비스로의 개인 건강 데이터 전송 없음</li><li>데이터 판매 또는 거래 없음</li><li>HealthKit 데이터는 Apple 가이드라인에 따라 보호됩니다</li></ul>
+            <h2>7. 서드파티 서비스</h2>
+            <p>OPUS는 다음 서드파티 서비스와 통합됩니다:</p>
+            <ul>
+                <li><strong>OpenAI API(GPT-4o):</strong> OPUS Pro 클라우드 피부 분석에 사용. 사진은 AI 분석을 위해 백엔드를 통해 전송됩니다. OpenAI는 API 데이터를 모델 훈련에 사용하지 않습니다</li>
+                <li><strong>Supabase:</strong> 선택적 계정 및 데이터 동기화에 사용. AWS 인프라에서 호스팅</li>
+                <li><strong>Railway:</strong> 클라우드 분석 요청을 처리하는 백엔드 서버 호스팅</li>
+                <li><strong>Apple HealthKit:</strong> 데이터는 Apple 가이드라인에 따라 보호됩니다</li>
+            </ul>
+            <p>당사는:</p>
+            <ul>
+                <li>광고 네트워크로 데이터를 전송하지 않습니다</li>
+                <li>귀하의 데이터를 판매하거나 거래하지 않습니다</li>
+                <li>마케팅 목적으로 분석 서비스와 개인 건강 데이터를 공유하지 않습니다</li>
+            </ul>
 
-            <h2>6. 광고</h2>
+            <h2>8. 광고</h2>
             <p>OPUS는 광고를 포함하지 않으며 광고 목적으로 데이터를 수집하지 않습니다.</p>
 
-            <h2>7. 사용자 권리</h2>
-            <ul><li><strong>데이터 삭제:</strong> 설정 &gt; 모든 데이터 삭제를 통해 모든 데이터를 영구적으로 삭제할 수 있습니다</li><li><strong>권한 관리:</strong> iOS 설정을 통해 언제든지 HealthKit 및 카메라 권한을 활성화 또는 비활성화할 수 있습니다</li><li><strong>구독 관리:</strong> Apple 설정 &gt; 구독에서 관리됩니다</li></ul>
+            <h2>9. 사용자 권리</h2>
+            <ul>
+                <li><strong>데이터 삭제:</strong> 설정 &gt; 모든 데이터 삭제를 통해 모든 로컬 데이터를 영구적으로 삭제할 수 있습니다</li>
+                <li><strong>계정 삭제:</strong> 계정을 만든 경우 <a href="mailto:opusbio.hello@gmail.com">opusbio.hello@gmail.com</a>으로 연락하여 클라우드 데이터 및 계정의 완전한 삭제를 요청할 수 있습니다</li>
+                <li><strong>권한 관리:</strong> iOS 설정을 통해 언제든지 HealthKit 및 카메라 권한을 활성화 또는 비활성화할 수 있습니다</li>
+                <li><strong>구독 관리:</strong> Apple 설정 &gt; 구독에서 관리됩니다</li>
+            </ul>
 
-            <h2>8. 아동 개인정보 보호</h2>
-            <p>OPUS는 17세 미만 사용자를 대상으로 하지 않습니다. 17세 미만 사용자의 데이터를 의도적으로 수집하지 않습니다.</p>
+            <h2>10. 아동 개인정보 보호</h2>
+            <p>OPUS는 13세 미만 사용자를 대상으로 하지 않습니다. 13세 미만 사용자의 데이터를 의도적으로 수집하지 않습니다.</p>
 
-            <h2>9. 변경 사항</h2>
+            <h2>11. 변경 사항</h2>
             <p>이 개인정보 보호정책은 업데이트될 수 있습니다. 중요한 변경 사항은 애플리케이션을 통해 안내됩니다.</p>
 
-            <h2>10. 문의</h2>
-            <p><a href="mailto:YOUR_EMAIL@example.com">opusbio.hello@gmail.com</a></p>
+            <h2>12. 문의</h2>
+            <p><a href="mailto:opusbio.hello@gmail.com">opusbio.hello@gmail.com</a></p>
         </div>
 
         <div class="footer">
             <p>&copy; 2026 OPUS. All rights reserved.</p>
-            <p>Effective date: February 24, 2026</p>
+            <p>Effective date: March 9, 2026</p>
         </div>
     </div>
 
