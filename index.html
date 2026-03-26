@@ -138,7 +138,32 @@
                 <li>Cloud analysis requires your explicit opt-in consent</li>
                 <li>You can revoke consent at any time in Settings &gt; AI Data Usage</li>
                 <li>Without consent, all analysis runs on-device only (no data leaves your phone)</li>
-                <li>Free users never send data to cloud — analysis is always on-device</li>
+                <li>Free users never send photos or health data for skin analysis — all skin analysis remains on-device</li>
+            </ul>
+
+            <h2>3b. Wellness Insights (All Users)</h2>
+            <p>To provide personalized motivational messages, OPUS sends limited non-health signals to our server for all users, including free-tier users. <strong>No explicit consent is required</strong> because no health data is involved.</p>
+            <p><strong>Data we send:</strong></p>
+            <ul>
+                <li>Current wellness mode (e.g. Restore, Steady, Thrive)</li>
+                <li>App usage streak and day count</li>
+                <li>Time of day, day of week, and season</li>
+                <li>App language preference</li>
+            </ul>
+            <p><strong>Data we do NOT send for free users:</strong></p>
+            <ul>
+                <li>No sleep, heart rate, HRV, or any HealthKit data</li>
+                <li>No skin scan photos or scores</li>
+                <li>No stress, activity, hydration, caffeine, or alcohol data</li>
+                <li>No personal identifiers (name, email, age, gender)</li>
+            </ul>
+            <p><strong>How it works:</strong></p>
+            <ul>
+                <li>Signals are sent to OPUS servers hosted on Railway (railway.app)</li>
+                <li>OpenAI GPT-4o-mini generates a brief motivational motto</li>
+                <li>Responses are cached for up to 4 hours, then automatically deleted</li>
+                <li>Free users receive up to 1 motto per day; Pro users up to 5</li>
+                <li>Per OpenAI's API data usage policy, API inputs are NOT used for training</li>
             </ul>
 
             <h2>4. Data Synchronization</h2>
@@ -243,7 +268,32 @@
                 <li>Die Cloud-Analyse erfordert Ihre ausdrückliche Opt-in-Zustimmung</li>
                 <li>Sie können die Zustimmung jederzeit in Einstellungen &gt; KI-Datennutzung widerrufen</li>
                 <li>Ohne Zustimmung erfolgt die gesamte Analyse nur auf dem Gerät (keine Daten verlassen Ihr Telefon)</li>
-                <li>Kostenlose Nutzer senden niemals Daten in die Cloud — die Analyse erfolgt immer auf dem Gerät</li>
+                <li>Kostenlose Nutzer senden niemals Fotos oder Gesundheitsdaten für die Hautanalyse in die Cloud — alle Hautanalysen erfolgen auf dem Gerät</li>
+            </ul>
+
+            <h2>3b. Wellness-Einblicke (Alle Nutzer)</h2>
+            <p>Um personalisierte Motivationsnachrichten bereitzustellen, sendet OPUS begrenzte, nicht gesundheitsbezogene Signale an unseren Server für alle Nutzer, einschließlich kostenloser Nutzer. <strong>Eine ausdrückliche Zustimmung ist nicht erforderlich</strong>, da keine Gesundheitsdaten betroffen sind.</p>
+            <p><strong>Gesendete Daten:</strong></p>
+            <ul>
+                <li>Aktueller Wellness-Modus (z.B. Restore, Steady, Thrive)</li>
+                <li>App-Nutzungsserie und Gesamtanzahl der Tage</li>
+                <li>Tageszeit, Wochentag und Jahreszeit</li>
+                <li>App-Spracheinstellung</li>
+            </ul>
+            <p><strong>Daten, die für kostenlose Nutzer NICHT gesendet werden:</strong></p>
+            <ul>
+                <li>Keine Schlaf-, Herzfrequenz-, HRV- oder HealthKit-Daten</li>
+                <li>Keine Hautscan-Fotos oder -Ergebnisse</li>
+                <li>Keine Stress-, Aktivitäts-, Hydrations-, Koffein- oder Alkoholdaten</li>
+                <li>Keine persönlichen Identifikatoren (Name, E-Mail, Alter, Geschlecht)</li>
+            </ul>
+            <p><strong>Funktionsweise:</strong></p>
+            <ul>
+                <li>Signale werden an OPUS-Server gesendet, die auf Railway (railway.app) gehostet werden</li>
+                <li>OpenAI GPT-4o-mini generiert ein kurzes Motivationsmotto</li>
+                <li>Antworten werden bis zu 4 Stunden zwischengespeichert und dann automatisch gelöscht</li>
+                <li>Kostenlose Nutzer erhalten bis zu 1 Motto pro Tag; Pro-Nutzer bis zu 5</li>
+                <li>Gemäß der API-Datennutzungsrichtlinie von OpenAI werden API-Eingaben NICHT für das Training verwendet</li>
             </ul>
 
             <h2>4. Datensynchronisierung</h2>
@@ -348,7 +398,32 @@
                 <li>El análisis en la nube requiere tu consentimiento explícito de activación</li>
                 <li>Puedes revocar el consentimiento en cualquier momento en Ajustes &gt; Uso de datos de IA</li>
                 <li>Sin consentimiento, todo el análisis se ejecuta solo en el dispositivo (ningún dato sale de tu teléfono)</li>
-                <li>Los usuarios gratuitos nunca envían datos a la nube — el análisis siempre es en el dispositivo</li>
+                <li>Los usuarios gratuitos nunca envían fotos ni datos de salud para el análisis de piel — todo el análisis de piel se realiza en el dispositivo</li>
+            </ul>
+
+            <h2>3b. Consejos de Bienestar (Todos los Usuarios)</h2>
+            <p>Para proporcionar mensajes motivacionales personalizados, OPUS envía señales limitadas no relacionadas con la salud a nuestro servidor para todos los usuarios, incluidos los usuarios gratuitos. <strong>No se requiere consentimiento explícito</strong> porque no se involucran datos de salud.</p>
+            <p><strong>Datos que enviamos:</strong></p>
+            <ul>
+                <li>Modo de bienestar actual (ej. Restore, Steady, Thrive)</li>
+                <li>Racha de uso de la aplicación y recuento de días</li>
+                <li>Hora del día, día de la semana y estación</li>
+                <li>Preferencia de idioma de la aplicación</li>
+            </ul>
+            <p><strong>Datos que NO enviamos para usuarios gratuitos:</strong></p>
+            <ul>
+                <li>Sin datos de sueño, frecuencia cardíaca, VFC o HealthKit</li>
+                <li>Sin fotos ni puntuaciones de escaneo de piel</li>
+                <li>Sin datos de estrés, actividad, hidratación, cafeína o alcohol</li>
+                <li>Sin identificadores personales (nombre, correo, edad, sexo)</li>
+            </ul>
+            <p><strong>Cómo funciona:</strong></p>
+            <ul>
+                <li>Las señales se envían a los servidores OPUS alojados en Railway (railway.app)</li>
+                <li>OpenAI GPT-4o-mini genera un breve lema motivacional</li>
+                <li>Las respuestas se almacenan en caché durante un máximo de 4 horas y luego se eliminan automáticamente</li>
+                <li>Los usuarios gratuitos reciben hasta 1 lema por día; los usuarios Pro hasta 5</li>
+                <li>Según la política de uso de datos de OpenAI, las entradas de API NO se utilizan para entrenamiento</li>
             </ul>
 
             <h2>4. Sincronización de datos</h2>
@@ -453,7 +528,32 @@
                 <li>L'analyse cloud nécessite votre consentement explicite d'activation</li>
                 <li>Vous pouvez révoquer le consentement à tout moment dans Réglages &gt; Utilisation des données IA</li>
                 <li>Sans consentement, toute l'analyse s'effectue uniquement sur l'appareil (aucune donnée ne quitte votre téléphone)</li>
-                <li>Les utilisateurs gratuits n'envoient jamais de données vers le cloud — l'analyse est toujours sur l'appareil</li>
+                <li>Les utilisateurs gratuits n'envoient jamais de photos ni de données de santé pour l'analyse cutanée — toute l'analyse cutanée reste sur l'appareil</li>
+            </ul>
+
+            <h2>3b. Conseils Bien-être (Tous les Utilisateurs)</h2>
+            <p>Pour fournir des messages de motivation personnalisés, OPUS envoie des signaux limités et non liés à la santé à notre serveur pour tous les utilisateurs, y compris les utilisateurs gratuits. <strong>Aucun consentement explicite n'est requis</strong> car aucune donnée de santé n'est impliquée.</p>
+            <p><strong>Données envoyées :</strong></p>
+            <ul>
+                <li>Mode bien-être actuel (ex. Restore, Steady, Thrive)</li>
+                <li>Série d'utilisation et nombre total de jours</li>
+                <li>Heure de la journée, jour de la semaine et saison</li>
+                <li>Préférence linguistique de l'application</li>
+            </ul>
+            <p><strong>Données NON envoyées pour les utilisateurs gratuits :</strong></p>
+            <ul>
+                <li>Aucune donnée de sommeil, fréquence cardiaque, VFC ou HealthKit</li>
+                <li>Aucune photo ou score de scan cutané</li>
+                <li>Aucune donnée de stress, activité, hydratation, caféine ou alcool</li>
+                <li>Aucun identifiant personnel (nom, email, âge, sexe)</li>
+            </ul>
+            <p><strong>Fonctionnement :</strong></p>
+            <ul>
+                <li>Les signaux sont envoyés aux serveurs OPUS hébergés sur Railway (railway.app)</li>
+                <li>OpenAI GPT-4o-mini génère une brève devise motivationnelle</li>
+                <li>Les réponses sont mises en cache pendant 4 heures maximum, puis supprimées automatiquement</li>
+                <li>Les utilisateurs gratuits reçoivent jusqu'à 1 devise par jour ; les utilisateurs Pro jusqu'à 5</li>
+                <li>Conformément à la politique d'utilisation des données d'OpenAI, les entrées API ne sont PAS utilisées pour l'entraînement</li>
             </ul>
 
             <h2>4. Synchronisation des données</h2>
@@ -558,7 +658,32 @@
                 <li>Bulut analizi açık opt-in onayınızı gerektirir</li>
                 <li>Onayı istediğiniz zaman Ayarlar &gt; AI Veri Kullanımı'ndan iptal edebilirsiniz</li>
                 <li>Onay olmadan tüm analiz yalnızca cihazda çalışır (telefonunuzdan veri çıkmaz)</li>
-                <li>Ücretsiz kullanıcılar asla buluta veri göndermez — analiz her zaman cihaz üzerindedir</li>
+                <li>Ücretsiz kullanıcılar cilt analizi için fotoğraf veya sağlık verisi göndermez — tüm cilt analizi cihaz üzerinde gerçekleşir</li>
+            </ul>
+
+            <h2>3b. Sağlık İpuçları (Tüm Kullanıcılar)</h2>
+            <p>Kişiselleştirilmiş motivasyon mesajları sunmak için OPUS, ücretsiz kullanıcılar dahil tüm kullanıcıların sınırlı ve sağlık dışı sinyallerini sunucumuza gönderir. Sağlık verisi içermediğinden <strong>ayrı bir onay gerekmez</strong>.</p>
+            <p><strong>Gönderilen veriler:</strong></p>
+            <ul>
+                <li>Mevcut sağlık modu (örn. Restore, Steady, Thrive)</li>
+                <li>Uygulama kullanım serisi ve toplam kullanım günü</li>
+                <li>Günün saati, haftanın günü ve mevsim</li>
+                <li>Uygulama dil tercihi</li>
+            </ul>
+            <p><strong>Ücretsiz kullanıcılar için gönderilmeyen veriler:</strong></p>
+            <ul>
+                <li>Uyku, nabız, HRV veya herhangi bir HealthKit verisi gönderilmez</li>
+                <li>Cilt tarama fotoğrafı veya skoru gönderilmez</li>
+                <li>Stres, aktivite, su tüketimi, kafein veya alkol verisi gönderilmez</li>
+                <li>Kişisel tanımlayıcı bilgi gönderilmez (ad, e-posta, yaş, cinsiyet)</li>
+            </ul>
+            <p><strong>Nasıl çalışır:</strong></p>
+            <ul>
+                <li>Sinyaller Railway (railway.app) üzerinde barındırılan OPUS sunucularına gönderilir</li>
+                <li>OpenAI GPT-4o-mini kısa bir motivasyon mottosu oluşturur</li>
+                <li>Yanıtlar en fazla 4 saat önbelleğe alınır ve ardından otomatik silinir</li>
+                <li>Ücretsiz kullanıcılar günde en fazla 1, Pro kullanıcılar en fazla 5 motto alır</li>
+                <li>OpenAI'ın API veri kullanım politikasına göre API girdileri eğitim için kullanılmaz</li>
             </ul>
 
             <h2>4. Veri Senkronizasyonu</h2>
@@ -663,7 +788,32 @@
                 <li>クラウド分析には明示的なオプトイン同意が必要です</li>
                 <li>設定 &gt; AIデータ使用からいつでも同意を取り消せます</li>
                 <li>同意なしでは、すべての分析がデバイス上のみで実行されます（データは端末から送信されません）</li>
-                <li>無料ユーザーはクラウドにデータを送信しません — 分析は常にデバイス上で行われます</li>
+                <li>無料ユーザーは肌分析のために写真や健康データをクラウドに送信しません — すべての肌分析はデバイス上で行われます</li>
+            </ul>
+
+            <h2>3b. ウェルネスインサイト（全ユーザー）</h2>
+            <p>パーソナライズされたモチベーションメッセージを提供するために、OPUSは無料ユーザーを含むすべてのユーザーの限定的な非健康シグナルをサーバーに送信します。健康データは含まれないため、<strong>明示的な同意は不要です</strong>。</p>
+            <p><strong>送信するデータ：</strong></p>
+            <ul>
+                <li>現在のウェルネスモード（例：Restore、Steady、Thrive）</li>
+                <li>アプリ使用連続日数と合計使用日数</li>
+                <li>時間帯、曜日、季節</li>
+                <li>アプリの言語設定</li>
+            </ul>
+            <p><strong>無料ユーザーについて送信しないデータ：</strong></p>
+            <ul>
+                <li>睡眠、心拍数、HRV、またはHealthKitデータなし</li>
+                <li>肌スキャン写真またはスコアなし</li>
+                <li>ストレス、活動、水分補給、カフェイン、アルコールデータなし</li>
+                <li>個人識別情報なし（名前、メール、年齢、性別）</li>
+            </ul>
+            <p><strong>仕組み：</strong></p>
+            <ul>
+                <li>シグナルはRailway（railway.app）でホストされるOPUSサーバーに送信されます</li>
+                <li>OpenAI GPT-4o-miniが簡潔なモチベーションモットーを生成します</li>
+                <li>レスポンスは最大4時間キャッシュされ、その後自動削除されます</li>
+                <li>無料ユーザーは1日最大1つ、Proユーザーは最大5つのモットーを受け取ります</li>
+                <li>OpenAIのAPIデータ使用ポリシーに基づき、API入力はトレーニングに使用されません</li>
             </ul>
 
             <h2>4. データ同期</h2>
@@ -768,7 +918,32 @@
                 <li>클라우드 분석은 명시적 옵트인 동의가 필요합니다</li>
                 <li>설정 &gt; AI 데이터 사용에서 언제든지 동의를 취소할 수 있습니다</li>
                 <li>동의 없이는 모든 분석이 기기에서만 실행됩니다 (데이터가 휴대폰을 떠나지 않습니다)</li>
-                <li>무료 사용자는 클라우드로 데이터를 보내지 않습니다 — 분석은 항상 기기에서 수행됩니다</li>
+                <li>무료 사용자는 피부 분석을 위해 사진이나 건강 데이터를 클라우드로 전송하지 않습니다 — 모든 피부 분석은 기기에서 수행됩니다</li>
+            </ul>
+
+            <h2>3b. 웰니스 인사이트 (모든 사용자)</h2>
+            <p>개인 맞춤형 동기 부여 메시지를 제공하기 위해 OPUS는 무료 사용자를 포함한 모든 사용자의 제한된 비건강 신호를 서버로 전송합니다. 건강 데이터가 포함되지 않으므로 <strong>별도의 동의가 필요하지 않습니다</strong>.</p>
+            <p><strong>전송하는 데이터:</strong></p>
+            <ul>
+                <li>현재 웰니스 모드 (예: Restore, Steady, Thrive)</li>
+                <li>앱 사용 연속일수 및 총 사용일수</li>
+                <li>시간대, 요일, 계절</li>
+                <li>앱 언어 설정</li>
+            </ul>
+            <p><strong>무료 사용자에 대해 전송하지 않는 데이터:</strong></p>
+            <ul>
+                <li>수면, 심박수, HRV 또는 HealthKit 데이터 없음</li>
+                <li>피부 스캔 사진 또는 점수 없음</li>
+                <li>스트레스, 활동, 수분, 카페인, 알코올 데이터 없음</li>
+                <li>개인 식별 정보 없음 (이름, 이메일, 나이, 성별)</li>
+            </ul>
+            <p><strong>작동 방식:</strong></p>
+            <ul>
+                <li>신호는 Railway(railway.app)에서 호스팅되는 OPUS 서버로 전송됩니다</li>
+                <li>OpenAI GPT-4o-mini가 간단한 동기 부여 모토를 생성합니다</li>
+                <li>응답은 최대 4시간 캐시된 후 자동 삭제됩니다</li>
+                <li>무료 사용자는 하루 최대 1개, Pro 사용자는 최대 5개의 모토를 받습니다</li>
+                <li>OpenAI의 API 데이터 사용 정책에 따라 API 입력은 학습에 사용되지 않습니다</li>
             </ul>
 
             <h2>4. 데이터 동기화</h2>
